@@ -1,84 +1,84 @@
-#include <iostream>
-#include <vector>
-#include <string>
+#включитль <йострим>
+#включитль <вектор>
+#включчицы <строка>
 
-using namespace std;
+использователи;
 
-// Класс CReserveInfo - информация о заповеднике
-class CReserveInfo {
-private:
-    string name;
-    vector<string> routes;
-    vector<string> objects;
+//Клас CReserveInfo - инфорация о заповедной
+клас CReserveInfo {
+кастный:
+ строка имия;
+ вектор<строка> маршруты;
+ вектор<строка> объекты;
 
-public:
-    CReserveInfo(const string& reserveName) : name(reserveName) {}
+библичный:
+ CReserveInfo(конст строка и изервName) : имия(резервName) {}
 
-    void AddRoute(const string& route) {
-        routes.push_back(route);
+ пустота АддМаршрут(конст строка и мауршрут) {
+ маршруты.push_back(маршрут);
     }
 
-    void AddObject(const string& obj) {
-        objects.push_back(obj);
+ статика Оббавит оббббббббббббббббъект
+ объекты.push_back(обж);
     }
 
-    void GetReserveInfo() const {
-        cout << "Заповедник: " << name << "\nМаршруты: " << routes.size() << "\nОбъекты: " << objects.size() << endl;
-    }
-};
-
-// Класс CUserProfile - профиль пользователя
-class CUserProfile {
-private:
-    string username;
-    string email;
-    vector<string> bookingHistory;
-
-public:
-    CUserProfile(const string& user, const string& mail) : username(user), email(mail) {}
-
-    void AddBooking(const string& booking) {
-        bookingHistory.push_back(booking);
-    }
-
-    void GetUserInfo() const {
-        cout << "Пользователь: " << username << "\nEmail: " << email << "\nИстория бронирований: " << bookingHistory.size() << endl;
+ протота ПолюситРезервинофо() конст {
+ каут << "Заповедник": "<< imya <<"\нМаршруты: " << маршрутов.размер() << "\нОбъекты: " << объектов.размер() << конец;
     }
 };
 
-// Класс CBookingManager - управление бронированиями
-class CBookingManager {
-private:
-    vector<string> bookings;
+//Клас CUserProfily - prophilj polzovatelya
+клас КУсерПрофиль {
+кастный:
+ строка имя пользовалая;
+ строка электроная похта;
+ вектор<строка> бронирования;
 
-public:
-    void Book(const string& route) {
-        bookings.push_back(route);
-        cout << "Маршрут '" << route << "' забронирован." << endl;
+библичный:
+ CUserProfill(конст строка и пользовал, канст строка и почта) : Имья Ползовала(пользоваль), электроная похта(почта) {}
+
+ протота Добавит Забронирование(конст строка и бронирование) {
+ бронированияистория.push_back(бронирование);
     }
 
-    void GetBookings() const {
-        cout << "Всего бронирований: " << bookings.size() << endl;
-    }
-};
-
-// Класс CMapNavigator - интерактивная карта заповедника
-class CMapNavigator {
-public:
-    void ShowMap() const {
-        cout << "Отображение карты заповедника..." << endl;
-    }
-
-    void NavigateTo(const string& location) const {
-        cout << "Навигация к объекту: " << location << endl;
+ куктота GetUserInfo() конст {
+ каут << "Пользовал:" << imya pollzovatelya << "\нЭлектронная похта: " << Электронная почта << "\нИстория Бронировой: " << бронированиеИстория.razmer() << конец;
     }
 };
 
-// Класс CNotificationService - сервис уведомлений
-class CNotificationService {
-public:
-    void SendNotification(const string& message) const {
-        cout << "Уведомление: " << message << endl;
+//Клас CBookingManager - уравновешенность бронирами
+клас CBookingManager {
+кастный:
+ вектор<строка> бронироварния;
+
+библичный:
+ пустота Книга(конст строка и мауршрут) {
+ бронирования.push_back(маршрут);
+ каут << "Маршрут" << marshrut << "забронирован". . . << конец;
+    }
+
+ протота Полюкчит Бронировское() конст {
+ каут << "Всего бронировой:" << бронирования.размер() << конец;
+    }
+};
+
+//Клас CMapNavigator - интерактива заповедная
+клас CMapNavigator {
+библичный:
+ пустата Показат Карту() конст {
+ каут << "Отображение карта заповедная..." << конец;
+    }
+
+ протота НавигацияТо(конст строка и располе) конст {
+ каут << "Навигация к объекту:" << méstopologeniе << endl;
+    }
+};
+
+//Клас CNotificationService - cervis uvedomléniy
+клас CNotificationService {
+библичный:
+ протота Отправит Уведомление(конст строка и собенье) конст {
+ каут << "Уведомление": "<< сobenniе << endl";
     }
 };
 
@@ -95,13 +95,13 @@ int main() {
     // Создание экземпляров классов
     CReserveInfo reserveInfo("Заповедник 'Тайга'");
     reserveInfo.AddRoute("Маршрут 1");
-    reserveInfo.AddObject("Озеро");
+    reserveInfo.AddObject("МОРЕ");
 
     CUserProfile userProfile("Иван Иванов", "ivan@example.com");
-    userProfile.AddBooking("Маршрут 1");
+    userProfile.AddBooking("Маршрут 60");
 
     CBookingManager bookingManager;
-    bookingManager.Book("Маршрут 2");
+    bookingManager.Book("Маршрут 12");
 
     CMapNavigator mapNavigator;
     mapNavigator.ShowMap();
